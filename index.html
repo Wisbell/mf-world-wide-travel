@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>World Wide Traveling</title>
+  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
+  <!-- Make a Nav -->
+  <nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+      <li><a href="http://localhost:8080/#/">Home</a></li>
+    </ul>
+  </nav>
+
+  <!-- Views show up here -->
+  <div ng-view></div>
+
+  <!-- Scripts -->
+  <script src="/bower_components/angular/angular.js" type="text/javascript"></script>
+
+  <script src="/bower_components/angular-route/angular-route.js" type="text/javascript"></script>
+
+  <script src="/bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+
+  <script src="app.js" type="text/javascript"></script>
 
 </body>
 </html>

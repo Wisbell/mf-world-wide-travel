@@ -3,13 +3,16 @@ console.log('app.js loaded')
 // Angular Stuff
 
 
-var app = angular.module('travelApp', ['ngRoute'])
+var app = angular.module('travelBookApp', ['ngRoute'])
 
 app.config(function($routeProvider, $locationProvider){
-  $locationProvider.hasPrefix('')
+  $locationProvider.hashPrefix('')
 
   $routeProvider
-    .when('/')
+    .when('/', {
+      controller: 'BookCtrl',
+      templateUrl: 'partials/booksView.html'
+      })
     .otherwise({
       redirectTo: '/'
     })
@@ -18,6 +21,6 @@ app.config(function($routeProvider, $locationProvider){
 
 
 
-app.controller('', function($scope){
-  console.log('Main controller')
-})
+// app.controller('BookCntrl', function($scope){
+//   console.log('Main controller')
+// })

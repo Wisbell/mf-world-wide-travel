@@ -17,10 +17,3 @@ app.config(function($routeProvider, $locationProvider){
       redirectTo: '/'
     })
 })
-
-
-
-
-// app.controller('BookCntrl', function($scope){
-//   console.log('Main controller')
-// })

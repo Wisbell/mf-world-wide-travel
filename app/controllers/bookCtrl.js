@@ -6,7 +6,7 @@ app.controller('BookCtrl', function($scope, $http){
 
   $http.get('data/guides.json')
     .then(function(val){
-      $scope.booksList = val.data.guides
-      console.log($scope.booksList)
+      $scope.bookList = val.data.guides
+      console.log($scope.bookList)
     })
 })
